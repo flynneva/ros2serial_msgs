@@ -1,4 +1,3 @@
-
 #ROS Logging Levels
 uint8 ROSDEBUG=0
 uint8 INFO=1
