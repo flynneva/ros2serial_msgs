@@ -20,11 +20,14 @@ find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Log.msg"
   "msg/TopicInfo.msg"
+  "msg/Received.msg"
   "srv/RequestParam.srv"
+  DEPENDENCIES builtin_interfaces std_msgs
 )
 
 if(BUILD_TESTING)
