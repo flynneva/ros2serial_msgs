@@ -27,6 +27,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/TopicInfo.msg"
   "msg/Forward.msg"
   "srv/RequestParam.srv"
+  "srv/Send.srv"
   DEPENDENCIES builtin_interfaces std_msgs
 )
 
