@@ -25,7 +25,7 @@ find_package(std_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Log.msg"
   "msg/TopicInfo.msg"
-  "msg/Received.msg"
+  "msg/Forward.msg"
   "srv/RequestParam.srv"
   DEPENDENCIES builtin_interfaces std_msgs
 )
